@@ -299,23 +299,13 @@
         </gazebo>
 
         <!-- tarsus -->
-        <joint name="tarsus_joint_${side}${position}" type="revolute">
+        <joint name="tarsus_joint_${side}${position}" type="fixed">
             <origin xyz="${tibia_length} 0.0 0.0" rpy="0.0 0.0 0.0"/>
             <parent link="tibia_${side}${position}"/>
             <child link="tarsus_${side}${position}"/>
             <axis xyz="0.0 0.0 ${axis}"/>
             <limit lower="${joint_lower_limit}" upper="${joint_upper_limit}" effort="${joint_effort}" velocity="${joint_velocity}"/>
         </joint>
-        <transmission name="tarsus_transmission_${side}${position}">
-            <type>transmission_interface/SimpleTransmission</type>
-            <joint name="tarsus_joint_${side}${position}">
-                <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            </joint>
-            <actuator name="tarsus_motor_${side}${position}">
-                <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-                <mechanicalReduction>1</mechanicalReduction>
-            </actuator>
-        </transmission>
         <link name="tarsus_${side}${position}">
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
