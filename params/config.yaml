@@ -1,0 +1,19 @@
+# Hexapod configuration Settings
+
+
+# Define leg measurements in meters
+COXA_LENGTH:   0.0330
+FEMUR_LENGTH:  0.0900
+TIBIA_LENGTH:  0.1125
+
+# Body Standing Height
+STANDING_BODY_HEIGHT: 0.09
+
+# Leg lift height is the max distance in meters the foot is lifted off the ground in a full step ( Gait Settings )
+# If you set this to close to the total measurement of your femur and tibia the leg IK calculation might fail
+LEG_LIFT_HEIGHT: 0.04
+
+# Define distance in meters from coxa joint to the center ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
+# IK is solved in local space currently, hence the reason right and left have same distance values
+COXA_TO_CENTER_X: [-0.055, -0.085, -0.055, 0.055, 0.085, 0.055]
+COXA_TO_CENTER_Y: [0.076, 0, -0.076, 0.076, 0, -0.076]
