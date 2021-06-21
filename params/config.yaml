@@ -7,7 +7,7 @@ FEMUR_LENGTH:  0.0900
 TIBIA_LENGTH:  0.1125
 
 # Body Standing Height
-STANDING_BODY_HEIGHT: 0.09
+STANDING_BODY_HEIGHT: 0.06
 
 # Leg lift height is the max distance in meters the foot is lifted off the ground in a full step ( Gait Settings )
 # If you set this to close to the total measurement of your femur and tibia the leg IK calculation might fail
