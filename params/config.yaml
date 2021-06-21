@@ -13,10 +13,11 @@ STANDING_BODY_HEIGHT: 0.06
 # If you set this to close to the total measurement of your femur and tibia the leg IK calculation might fail
 LEG_LIFT_HEIGHT: 0.04
 
-# Define vector x & y component in meters from center to coxa joint ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
+# Define vector x & y component in meters in the local coordinate system from center of the hexapod platform to coxa joint ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
 CENTER_TO_COXA_X: [-0.055, -0.085, -0.055, 0.055, 0.085, 0.055]
-CENTER_TO_COXA_Y: [0.076, 0, -0.076, 0.076, 0, -0.076]
+CENTER_TO_COXA_Y: [0.076, 0.0, -0.076, 0.076, 0.0, -0.076]
 
-# Define vector x & y component in meters from center to feet ground contact joint ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
+# Define vector x & y component in meters from origin in the global coordinate system to feet ground contact joint ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
 CENTER_TO_FEET_X: [-0.122, -0.144, -0.122, 0.122, 0.144, 0.122]
-CENTER_TO_FEET_Y: [0.166, 0, -0.166, 0.166, 0, -0.166]
+CENTER_TO_FEET_Y: [0.166, 0.0, -0.166, 0.166, 0.0, -0.166]
+CENTER_TO_FEET_Z: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
