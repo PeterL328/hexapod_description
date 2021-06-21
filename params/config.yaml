@@ -13,7 +13,10 @@ STANDING_BODY_HEIGHT: 0.09
 # If you set this to close to the total measurement of your femur and tibia the leg IK calculation might fail
 LEG_LIFT_HEIGHT: 0.04
 
-# Define distance in meters from coxa joint to the center ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
-# IK is solved in local space currently, hence the reason right and left have same distance values
-COXA_TO_CENTER_X: [-0.055, -0.085, -0.055, 0.055, 0.085, 0.055]
-COXA_TO_CENTER_Y: [0.076, 0, -0.076, 0.076, 0, -0.076]
+# Define vector x & y component in meters from center to coxa joint ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
+CENTER_TO_COXA_X: [-0.055, -0.085, -0.055, 0.055, 0.085, 0.055]
+CENTER_TO_COXA_Y: [0.076, 0, -0.076, 0.076, 0, -0.076]
+
+# Define vector x & y component in meters from center to feet ground contact joint ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
+CENTER_TO_FEET_X: [-0.122, -0.144, -0.122, 0.122, 0.144, 0.122]
+CENTER_TO_FEET_Y: [0.166, 0, -0.166, 0.166, 0, -0.166]
