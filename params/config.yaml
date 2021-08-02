@@ -14,7 +14,10 @@ SITTING_BODY_HEIGHT: 0.01
 
 # Leg lift height is the max distance in meters the foot is lifted off the ground in a full step ( Gait Settings )
 # If you set this to close to the total measurement of your femur and tibia the leg IK calculation might fail
-LEG_LIFT_HEIGHT: 0.04
+LEG_LIFT_HEIGHT: 0.02
+
+# Distance per step during walk.
+LEG_WALK_DISTANCE: 0.08
 
 # Define vector x & y component in meters in the local coordinate system from center of the hexapod platform to coxa joint ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
 CENTER_TO_COXA_X: [-0.055, -0.085, -0.055, 0.055, 0.085, 0.055]
