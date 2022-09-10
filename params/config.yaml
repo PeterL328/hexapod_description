@@ -20,7 +20,7 @@ LEG_LIFT_HEIGHT: 0.02
 GAIT_PERIOD_DISTANCE: 0.12
 
 # Rotations per gait period in radians
-GAIT_PERIOD_ROTATION: 0.34
+GAIT_PERIOD_ROTATION: 0.7
 
 # Define vector x & y component in meters in the local coordinate system from center of the hexapod platform to coxa joint ['LF', 'LM', 'LB', 'RF', 'RM', 'RB']
 CENTER_TO_COXA_X: [-0.055, -0.085, -0.055, 0.055, 0.085, 0.055]
